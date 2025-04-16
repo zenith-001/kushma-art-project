@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kushma Art Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css">
+</head>
+<body>
+    <!-- Navigation with Language and Theme Toggle -->
+    <nav id="navbar">
+        <a href="#" class="logo">
+            <span class="en">KUSHMA ART PROJECT</span>
+            <span class="np" style="display:none;">कुश्मा कला परियोजना</span>
+        </a>
+        <div class="nav-links">
+            <a href="#about" class="en">About</a>
+            <a href="#about" class="np" style="display:none;">बारेमा</a>
+            <a href="#gallery" class="en">Gallery</a>
+            <a href="#gallery" class="np" style="display:none;">ग्यालरी</a>
+            <a href="#events" class="en">Events</a>
+            <a href="#events" class="np" style="display:none;">कार्यक्रमहरू</a>
+            <a href="#donate" class="en">Donate</a>
+            <a href="#donate" class="np" style="display:none;">दान गर्नुहोस्</a>
+            <a href="#contact" class="en">Contact</a>
+            <a href="#contact" class="np" style="display:none;">सम्पर्क</a>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon" style="display:none;"></i>
+            </div>
+            <div class="language-toggle">
+                <span class="en">EN</span>
+                <span class="np" style="display:none;">ने</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1 class="animate">KUSHMA ART PROJECT</h1>
+            <h2 class="animate delay-1">"Insert Motto here"</h2>
+            <p class="animate delay-2">Description with an intention to...</p>
+        </div>
+        <div class="scroll-down" onclick="scrollToSection('preview')">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Preview Cards Section -->
+    <section class="preview-section" id="preview">
+        <h2 class="preview-title en">Support</h2>
+        <h2 class="preview-title np" style="display:none;">समर्थन</h2>
+        <div class="preview-container">
+            <div class="preview-card" style="background-image: url('images/gallery1.jpg')">
+                <div class="preview-card-content">
+                    <h3 class="en">About Us</h3>
+                    <h3 class="np" style="display:none;">हाम्रो बारेमा</h3>
+                    <p class="en">What do we aim? Our mission and vision for the art community.</p>
+                    <p class="np" style="display:none;">हाम्रो लक्ष्य के हो? कला समुदायको लागि हाम्रो मिशन र दृष्टि।</p>
+                    <a href="#about" class="btn en">Learn More</a>
+                    <a href="#about" class="btn np" style="display:none;">थप जान्नुहोस्</a>
+                </div>
+            </div>
+            <div class="preview-card" style="background-image: url('images/gallery2.jpg')">
+                <div class="preview-card-content">
+                    <h3 class="en">Our Projects</h3>
+                    <h3 class="np" style="display:none;">हाम्रा परियोजनाहरू</h3>
+                    <p class="en">Explore our current and past art initiatives and exhibitions.</p>
+                    <p class="np" style="display:none;">हाम्रा वर्तमान र विगतका कला पहलहरू र प्रदर्शनीहरू अन्वेषण गर्नुहोस्।</p>
+                    <a href="#gallery" class="btn en">View Gallery</a>
+                    <a href="#gallery" class="btn np" style="display:none;">ग्यालरी हेर्नुहोस्</a>
+                </div>
+            </div>
+            <div class="preview-card" style="background-image: url('images/gallery3.jpg')">
+                <div class="preview-card-content">
+                    <h3 class="en">Get Involved</h3>
+                    <h3 class="np" style="display:none;">संलग्न हुनुहोस्</h3>
+                    <p class="en">Learn how you can support or participate in our projects.</p>
+                    <p class="np" style="display:none;">हाम्रा परियोजनाहरूमा कसरी समर्थन वा सहभागी हुन सकिन्छ भन्ने जान्नुहोस्।</p>
+                    <a href="#donate" class="btn en">Support Us</a>
+                    <a href="#donate" class="btn np" style="display:none;">हामीलाई समर्थन गर्नुहोस्</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <h2 class="section-title en">About Us</h2>
+        <h2 class="section-title np" style="display:none;">हाम्रो बारेमा</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3 class="en animate delay-1">What do we aim?</h3>
+                <h3 class="np animate delay-1" style="display:none;">हाम्रो लक्ष्य के हो?</h3>
+                <p class="en animate delay-1">The Kushma Art Project is dedicated to fostering artistic expression and cultural exchange in the Kushma region. We aim to create a vibrant community where artists can collaborate, innovate, and showcase their work to a global audience.</p>
+                <p class="np animate delay-1" style="display:none;">कुश्मा कला परियोजना कुश्मा क्षेत्रमा कलात्मक अभिव्यक्ति र सांस्कृतिक आदानप्रदानलाई बढावा दिन समर्पित छ। हाम्रो लक्ष्य एक जीवन्त समुदाय सिर्जना गर्नु हो जहाँ कलाकारहरूले सहयोग गर्न, नवीनता ल्याउन, र आफ्नो कार्य विश्वव्यापी दर्शकहरूसामने प्रदर्शन गर्न सकून्।</p>
+                <p class="en animate delay-2">Our mission is to provide a platform for emerging and established artists to connect, learn, and grow together. Through exhibitions, workshops, and community projects, we strive to make art accessible to everyone.</p>
+                <p class="np animate delay-2" style="display:none;">हाम्रो मिशन उदीयमान र स्थापित कलाकारहरूले जोड्न, सिक्न, र सँगै बढ्न प्लेटफर्म प्रदान गर्नु हो। प्रदर्शनीहरू, कार्यशालाहरू, र समुदाय परियोजनाहरू मार्फत, हामी कलालाई सबैको लागि सुलभ बनाउन प्रयास गर्दछौं।</p>
+                <p class="en animate delay-3">Blah Blah Blah... Additional details about the organization's history, achievements, and future goals would be included here to provide comprehensive information about the project.</p>
+                <p class="np animate delay-3" style="display:none;">ब्लाह ब्लाह ब्लाह... संस्थाको इतिहास, उपलब्धिहरू, र भविष्यका लक्ष्यहरूको बारेमा थप विवरणहरू यहाँ समावेश गरिनेछन् जसले परियोजनाको बारेमा विस्तृत जानकारी प्रदान गर्दछ।</p>
+            </div>
+            <div class="about-image animate delay-2">
+                <img src="images/about.jpg" alt="Kushma Art Project">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <h2 class="section-title en">Gallery</h2>
+        <h2 class="section-title np" style="display:none;">ग्यालरी</h2>
+        <div class="gallery-container">
+            <div class="gallery-item animate">
+                <img src="images/gallery1.jpg" alt="Artwork 1">
+            </div>
+            <div class="gallery-item animate delay-1">
+                <img src="images/gallery2.jpg" alt="Artwork 2">
+            </div>
+            <div class="gallery-item animate delay-2">
+                <img src="images/gallery3.jpg" alt="Artwork 3">
+            </div>
+            <div class="gallery-item animate">
+                <img src="images/gallery4.jpg" alt="Artwork 4">
+            </div>
+            <div class="gallery-item animate delay-1">
+                <img src="images/gallery5.jpg" alt="Artwork 5">
+            </div>
+            <div class="gallery-item animate delay-2">
+                <img src="images/gallery6.jpg" alt="Artwork 6">
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section class="donate-section" id="donate">
+        <div class="donate-container">
+            <h2 class="en animate">Support Our Mission</h2>
+            <h2 class="np animate" style="display:none;">हाम्रो मिशनलाई समर्थन गर्नुहोस्</h2>
+            <p class="en animate delay-1">Precards of the next page scroll down section that will fit into place when you scroll any picture. Your generous support enables us to continue our work in promoting art and culture in the Kushma region.</p>
+            <p class="np animate delay-1" style="display:none;">तपाईंले स्क्रोल गर्दा कुनै पनि तस्विरमा फिट हुने अर्को पृष्ठको सेक्सनको प्रिकार्डहरू। तपाईंको उदार समर्थनले कुश्मा क्षेत्रमा कला र संस्कृतिलाई बढावा दिन हाम्रो कार्य जारी राख्न सक्षम बनाउँछ।</p>
+            
+            <div class="donate-options">
+                <div class="donate-option" data-amount="500">
+                    <span class="en">500 NPR</span>
+                    <span class="np" style="display:none;">५०० रुपैयाँ</span>
+                </div>
+                <div class="donate-option" data-amount="1000">
+                    <span class="en">1000 NPR</span>
+                    <span class="np" style="display:none;">१००० रुपैयाँ</span>
+                </div>
+                <div class="donate-option" data-amount="2000">
+                    <span class="en">2000 NPR</span>
+                    <span class="np" style="display:none;">२००० रुपैयाँ</span>
+                </div>
+                <div class="donate-option custom-amount">
+                    <input type="number" id="customAmount" placeholder="Custom Amount">
+                    <span class="en">NPR</span>
+                    <span class="np" style="display:none;">रुपैयाँ</span>
+                </div>
+            </div>
+            
+            <form id="donationForm">
+                <div class="form-group">
+                    <label for="name" class="en">Full Name</label>
+                    <label for="name" class="np" style="display:none;">पुरा नाम</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="en">Email</label>
+                    <label for="email" class="np" style="display:none;">इमेल</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="en">Phone</label>
+                    <label for="phone" class="np" style="display:none;">फोन</label>
+                    <input type="tel" id="phone">
+                </div>
+                
+                <div id="paymentMethods">
+                    <div class="payment-method active" data-method="esewa">
+                        <img src="images/esewa-logo.png" alt="eSewa">
+                    </div>
+                    <div class="payment-method" data-method="khalti">
+                        <img src="images/khalti-logo.png" alt="Khalti">
+                    </div>
+                    <div class="payment-method" data-method="card">
+                        <i class="fas fa-credit-card"></i>
+                        <span class="en">Card</span>
+                        <span class="np" style="display:none;">कार्ड</span>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-btn en">Donate Now</button>
+                <button type="submit" class="submit-btn np" style="display:none;">दान गर्नुहोस्</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Event Calendar Section -->
+    <section class="events-section" id="events">
+        <h2 class="section-title en">Upcoming Events</h2>
+        <h2 class="section-title np" style="display:none;">आगामी कार्यक्रमहरू</h2>
+        
+        <div id="calendar"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2 class="section-title en">Contact Us</h2>
+        <h2 class="section-title np" style="display:none;">सम्पर्क गर्नुहोस्</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3 class="en">Get In Touch</h3>
+                <h3 class="np" style="display:none;">सम्पर्कमा रहनुहोस्</h3>
+                <div class="contact-details">
+                    <p><i class="fas fa-map-marker-alt"></i> <span class="en">Kushma, Parbat, Nepal</span><span class="np" style="display:none;">कुश्मा, पर्वत, नेपाल</span></p>
+                    <p><i class="fas fa-phone"></i> +977 1234567890</p>
+                    <p><i class="fas fa-envelope"></i> info@kushmaartproject.com.np</p>
+                    <p><i class="fas fa-clock"></i> <span class="en">Open daily: 10:00 AM - 6:00 PM</span><span class="np" style="display:none;">दैनिक खुल्ने समय: १०:०० बिहान - ६:०० बेलुका</span></p>
+                </div>
+                <h3 class="en">Follow Us</h3>
+                <h3 class="np" style="display:none;">हामीलाई पछ्याउनुहोस्</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="contactName" class="en">Full Name</label>
+                        <label for="contactName" class="np" style="display:none;">पुरा नाम</label>
+                        <input type="text" id="contactName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail" class="en">Email Address</label>
+                        <label for="contactEmail" class="np" style="display:none;">इमेल ठेगाना</label>
+                        <input type="email" id="contactEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage" class="en">Your Message</label>
+                        <label for="contactMessage" class="np" style="display:none;">तपाईंको सन्देश</label>
+                        <textarea id="contactMessage" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn en">Send Message</button>
+                    <button type="submit" class="submit-btn np" style="display:none;">सन्देश पठाउनुहोस्</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4 class="en">Kushma Art Project</h4>
+                <h4 class="np" style="display:none;">कुश्मा कला परियोजना</h4>
+                <p class="en">Dedicated to promoting art and culture in the Kushma region through exhibitions, workshops, and community projects.</p>
+                <p class="np" style="display:none;">प्रदर्शनी, कार्यशाला, र समुदाय परियोजनाहरू मार्फत कुश्मा क्षेत्रमा कला र संस्कृतिलाई बढावा दिन समर्पित।</p>
+            </div>
+            <div class="footer-column">
+                <h4 class="en">Quick Links</h4>
+                <h4 class="np" style="display:none;">द्रुत लिङ्कहरू</h4>
+                <ul class="footer-links">
+                    <li><a href="#about" class="en">About Us</a><a href="#about" class="np" style="display:none;">हाम्रो बारेमा</a></li>
+                    <li><a href="#gallery" class="en">Gallery</a><a href="#gallery" class="np" style="display:none;">ग्यालरी</a></li>
+                    <li><a href="#donate" class="en">Donate</a><a href="#donate" class="np" style="display:none;">दान गर्नुहोस्</a></li>
+                    <li><a href="#contact" class="en">Contact</a><a href="#contact" class="np" style="display:none;">सम्पर्क</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 class="en">Contact Info</h4>
+                <h4 class="np" style="display:none;">सम्पर्क जानकारी</h4>
+                <p><i class="fas fa-map-marker-alt"></i> <span class="en">Kushma, Parbat, Nepal</span><span class="np" style="display:none;">कुश्मा, पर्वत, नेपाल</span></p>
+                <p><i class="fas fa-phone"></i> +977 1234567890</p>
+                <p><i class="fas fa-envelope"></i> info@kushmaartproject.com.np</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="en">&copy; 2023 Kushma Art Project. All rights reserved.</p>
+            <p class="np" style="display:none;">&copy; २०२३ कुश्मा कला परियोजना। सर्वाधिकार सुरक्षित।</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/donation.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
