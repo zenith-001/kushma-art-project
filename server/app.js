@@ -21,10 +21,8 @@ mongoose.connect(process.env.MONGODB_URI, {
 .catch(err => console.error('MongoDB connection error:', err));
 
 // Routes
-const donationRoutes = require('./routes/donations');
 const eventRoutes = require('./routes/events');
 
-app.use('/api/donations', donationRoutes);
 app.use('/api/events', eventRoutes);
 
 // Serve frontend
